@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>One Music - Modern Music HTML5 Template</title>
+
+    <!-- Favicon -->
+    <link th:href="@{/img/core-img/favicon.ico}" rel="icon">
+
+    <!-- Stylesheet -->
+    <link th:href="@{/style.css}" rel="stylesheet">
+
+</head>
+
+<body>
+<!-- Preloader -->
+<div class="preloader d-flex align-items-center justify-content-center">
+    <div class="lds-ellipsis">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+
+<!-- ##### Header Area Start ##### -->
+<header class="header-area">
+    <!-- Navbar Area -->
+    <div class="oneMusic-main-menu">
+        <div class="classy-nav-container breakpoint-off">
+            <div class="container">
+                <!-- Menu -->
+                <nav class="classy-navbar justify-content-between" id="oneMusicNav">
+
+                    <!-- Nav brand -->
+                    <a th:href="@{/}" class="nav-brand"><img th:src="@{/photo/core-img/logo.png}" alt=""></a>
+
+                    <!-- Navbar Toggler -->
+                    <div class="classy-navbar-toggler">
+                        <span class="navbarToggler"><span></span><span></span><span></span></span>
+                    </div>
+
+                    <!-- Menu -->
+                    <div class="classy-menu">
+
+                        <!-- Close Button -->
+                        <div class="classycloseIcon">
+                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                        </div>
+
+                        <!-- Nav Start -->
+                        <div class="classynav">
+                            <ul>
+                                <li><a th:href="@{/}">Home</a></li>
+                                <li><a th:href="@{songs}">Songs</a></li>
+                                <li><a th:href="@{artists}">Artists</a></li>
+                            </ul>
+
+                        </div>
+                        <!-- Nav End -->
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- ##### Header Area End ##### -->
+
+<!-- ##### Breadcumb Area Start ##### -->
+<section class="breadcumb-area bg-img bg-overlay" style="background-image: url(photo/bg-img/breadcumb3.jpg);">
+    <div class="bradcumbContent">
+        <p>See what’s new</p>
+        <h2>Songs</h2>
+    </div>
+</section>
+<!-- ##### Breadcumb Area End ##### -->
+
+<!-- ##### Album Catagory Area Start ##### -->
+<section class="album-catagory section-padding-100-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="browse-by-catagories catagory-menu d-flex flex-wrap align-items-center mb-70">
+                    <a href="#" data-filter="*">Browse All</a>
+                    <a href="#" data-filter=".a" class="active">A</a>
+                    <a href="#" data-filter=".b">B</a>
+                    <a href="#" data-filter=".c">C</a>
+                    <a href="#" data-filter=".d">D</a>
+                    <a href="#" data-filter=".e">E</a>
+                    <a href="#" data-filter=".f">F</a>
+                    <a href="#" data-filter=".g">G</a>
+                    <a href="#" data-filter=".h">H</a>
+                    <a href="#" data-filter=".i">I</a>
+                    <a href="#" data-filter=".j">J</a>
+                    <a href="#" data-filter=".k">K</a>
+                    <a href="#" data-filter=".l">L</a>
+                    <a href="#" data-filter=".m">M</a>
+                    <a href="#" data-filter=".n">N</a>
+                    <a href="#" data-filter=".o">O</a>
+                    <a href="#" data-filter=".p">P</a>
+                    <a href="#" data-filter=".q">Q</a>
+                    <a href="#" data-filter=".r">R</a>
+                    <a href="#" data-filter=".s">S</a>
+                    <a href="#" data-filter=".t">T</a>
+                    <a href="#" data-filter=".u">U</a>
+                    <a href="#" data-filter=".v">V</a>
+                    <a href="#" data-filter=".w">W</a>
+                    <a href="#" data-filter=".x">X</a>
+                    <a href="#" data-filter=".y">Y</a>
+                    <a href="#" data-filter=".z">Z</a>
+                    <a href="#" data-filter=".number">0-9</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row oneMusic-albums">
+
+            <!-- Single Album -->
+            <div class="col-12 col-sm-4 col-md-3 col-lg-2 single-album-item"   th:each="song : ${songs}" th:classappend="${song.getSort()}"> <!-- sửa tên để sort đoạn này -->
+                <div class="single-album-area">
+                    <div class="album-thumb">
+                        <img th:src="@{${song.getPhoto()}}" alt="">
+                        <!-- Play Icon -->
+                        <div class="play-icon">
+                            <a th:href="@{player?id=}+${song.getId()}" class="video--play--btn"><span class="icon-play-button"></span></a>
+                        </div>
+                    </div>
+                    <div class="album-info">
+                        <a href="#">
+                            <h6 th:text="${song.getName()}"></h6>
+                        </a>
+                        <p th:text="${song.getArtist()}"></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- ##### Album Catagory Area End ##### -->
+
+<!-- ##### All Javascript Script ##### -->
+<!-- jQuery-2.2.4 js -->
+<script type="text/javascript" th:src="@{/js/jquery/jquery-2.2.4.min.js}"></script>
+<!-- Popper js -->
+<script type="text/javascript" th:src="@{/js/bootstrap/popper.min.js}"></script>
+<!-- Bootstrap js -->
+<script type="text/javascript" th:src="@{/js/bootstrap/bootstrap.min.js}"></script>
+<!-- All Plugins js -->
+<script type="text/javascript" th:src="@{js/plugins/plugins.js}"></script>
+<!-- Active js -->
+<script type="text/javascript" th:src="@{js/active.js}"></script>
+</body>
+
+</html>
