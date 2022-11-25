@@ -9,6 +9,7 @@ public interface AlbumRepository extends JpaRepository <Album, Integer> {
     Album getAlbumById(int id);
 
     List<Album> findTop2ByOrderByDateDesc();
-    List<Album> findAllAlbumByOrderByDateAsc();
+
+    List<Album> findAllAlbumByOrderByDateDesc();
 }
 

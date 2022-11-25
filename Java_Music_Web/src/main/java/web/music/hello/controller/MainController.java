@@ -26,7 +26,7 @@ public class MainController {
     public String test(Model model){
         model.addAttribute("songs12", service.get12Songs());
         model.addAttribute("songs", service.getAllSongs());
-        model.addAttribute("albums", abservice.getAllAlbumsByOrderByDateAsc());
+        model.addAttribute("albums", abservice.getAllAlbumsByOrderByDateDesc());
         List<Album> albums2 = abservice.get2Albums();
         model.addAttribute("albums2", albums2);
         model.addAttribute("firstsong", service.getFirstSongAlbum(albums2.get(0).getName()));
@@ -54,7 +54,7 @@ public class MainController {
         model.addAttribute("album", album);
         List<Song> songs = service.findByAlbum(albumName);
         model.addAttribute("songs", songs);
-        model.addAttribute("albums", abservice.getAllAlbumsByOrderByDateAsc());
+        model.addAttribute("albums", abservice.getAllAlbumsByOrderByDateDesc());
         model.addAttribute("songs12", service.get12Songs());
         model.addAttribute("artists5", atservice.get5Artists());
         return "album";

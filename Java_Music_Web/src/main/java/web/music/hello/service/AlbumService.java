@@ -21,7 +21,7 @@ public class AlbumService {
         return repository.findTop2ByOrderByDateDesc();
     }
 
-    public List<Album> getAllAlbumsByOrderByDateAsc() {
-        return repository.findAllAlbumByOrderByDateAsc();
+    public List<Album> getAllAlbumsByOrderByDateDesc() {
+        return repository.findAllAlbumByOrderByDateDesc();
     }
 }

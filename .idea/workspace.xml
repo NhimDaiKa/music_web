@@ -4,11 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aabac439-52db-4aa1-893f-29d89a760197" name="Changes" comment="" />
+    <list default="true" id="aabac439-52db-4aa1-893f-29d89a760197" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java_Music_Web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Java_Music_Web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java_Music_Web/src/main/java/web/music/hello/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java_Music_Web/src/main/java/web/music/hello/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java_Music_Web/src/main/java/web/music/hello/repository/AlbumRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java_Music_Web/src/main/java/web/music/hello/repository/AlbumRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java_Music_Web/src/main/java/web/music/hello/service/AlbumService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java_Music_Web/src/main/java/web/music/hello/service/AlbumService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$/Java_Music_Web">
@@ -36,6 +45,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -47,6 +59,7 @@
     </option>
   </component>
   <component name="ProjectId" id="2GvbvufT6qx0cy6lozVGM6EHRD0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -57,7 +70,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/Java_Code/java-deserialize-webapp-master/java-deserialize-webapp-master&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.tools&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -110,6 +123,17 @@
     <option featureType="dependencySupport" implementationName="java:org.hibernate:hibernate-core" />
     <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot" />
     <option featureType="dependencySupport" implementationName="java:org.springframework:spring-webmvc" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
